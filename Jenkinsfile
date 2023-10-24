@@ -5,7 +5,7 @@ pipeline {
         timeout(time: 10, unit: 'MINUTES')
      }
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('nottiey-dockerhub')
+    DOCKERHUB_CREDENTIALS = credentials('nottie-dockerhub')
     APP_NAME = "nottiey/amazon"
     }
     stages { 
