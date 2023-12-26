@@ -10,14 +10,14 @@
 
 
 
-## Objectives
+### Objectives
 
 1. Containerize the application.
 2. Push the docker image onto AWS Elastic Container Registry.
 3. Deploy application onto digital ocean kubernetes cluster.
 4. Make changes to manifest files that trigger automated deployment onto argocd.
 
-## Tools:
+### Tools:
 
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/docker/docker-original-wordmark.svg" width="60"/>&nbsp;
