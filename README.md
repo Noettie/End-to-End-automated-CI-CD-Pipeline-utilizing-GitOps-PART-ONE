@@ -1,9 +1,9 @@
 # Containerization-and-deployment-of-nodejs-application
 
 ## Goal
-To deploy an e-commerce application developed using React utilizing GitOps 
+### To deploy an e-commerce application developed using React utilizing GitOps 
 
-## The project workflow is shown below:
+### The project workflow is shown below:
 
 
   ![Project1-diagram1](https://github.com/Noettie/End-to-End-automated-CI-CD-Pipeline-utilizing-GitOps-PART-ONE/assets/108426517/b56293f8-f11e-4745-80eb-edb06a1f4eb1) 
@@ -11,6 +11,7 @@ To deploy an e-commerce application developed using React utilizing GitOps
 
 
 ## Objectives
+
 1. Containerize the application.
 2. Push the docker image onto AWS Elastic Container Registry.
 3. Deploy application onto digital ocean kubernetes cluster.
@@ -32,11 +33,11 @@ To deploy an e-commerce application developed using React utilizing GitOps
 
 ## First part of the project is the Continous Integration Job
 
-### Work flow
-> Developer commits code to github
-> Jenkins checks out code and runs script on Jenkinsfile
-> Jenkins builds docker image 
-> Jenkins pushes image to docker registry
+### Work flow:
+> Developer commits code to github.
+> Jenkins checks out code and runs script on Jenkinsfile.
+> Jenkins builds docker image. 
+> Jenkins pushes image to docker registry.
 
 ## Prerequisites:
 
