@@ -34,10 +34,10 @@
 ## First part of the project is the Continous Integration Job
 
 ### Work flow:
-1. Developer commits code to github
-1. Jenkins checks out code and runs script on Jenkinsfile.
-1. Jenkins builds docker image. 
-1. Jenkins pushes image to docker registry.
+* Developer commits code to github
+* Jenkins checks out code and runs script on Jenkinsfile.
+* Jenkins builds docker image.
+* Jenkins pushes image to docker registry.
 
 ## Prerequisites:
 
