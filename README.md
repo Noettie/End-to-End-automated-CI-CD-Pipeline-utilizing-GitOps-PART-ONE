@@ -1,4 +1,4 @@
-# Containerization-and-deployment-of-nodejs-application
+## Containerization-and-deployment-of-nodejs-application
 
 ## Goal
 ### To deploy an e-commerce application developed using React utilizing GitOps 
@@ -48,11 +48,34 @@
 
 ### CI Steps:
 
-1. Create first build pipeline Job
-2. Create the 2nd Pipeline Job that will contain the kubernetes manifest files argocd will be watching, set string parameters for this job
-3. Run the first build, this will also trigger the manifest update build
-4. Spin up kubernetes cluster in digital ocean.
-  
+1. Navigate to the Jenkins dashboard, create a workspace which you will use for your jobs.
+2. Create a new "Pipeline" job. Lets call it "amazon-build-job". (The application is an amazon prototype).
+3. On the configuration page, navigate to the Pipeline section, select Pipeline script from SCM.
+4. On the SCM section, select GIT and paste your repository https url.
+5. On the Credentials section, if your repository is public, no need to input anything, if its private , add your credentials for authentication.
+6. Specify branches to build, if it is the main branch type " */main" , if it is master type " */master ".
+7. Script path: type Jenkinsfile.
+_Save and Apply. The job will appear on your workspace_.
+8. Create another job, lets call it "argocd-manifest-amazon"
+_The name of this second job is important as it should be the same as the the name given on stage(Trigger manifest Update") on buildjob of the Jenkinsfile_
+9. Navigate to Datadog tagging, and select " This job is parameterized"
+_Add a parameter, and select String parameter_
+_The name of the parameter is given on the  stage(Trigger manifest Update") of the Jenkinsfile as DOCKERTAG_.
+10. Navigate to the Pipeline section and selection " Pipeline Script from SCM" and choose Git
+_Paste the second github repository url with the Jenkinsfile and manifest files. 
+_Save and Apply_
+
+  ### _Both CI and CD Jobs are configured on Jenkins and should appear on your workspace_
+
+11. Click on build now of the CI Job.
+
+  ![jenkins-CI-job](https://github.com/Noettie/End-to-End-automated-CI-CD-Pipeline-utilizing-GitOps-PART-ONE/assets/108426517/a97788b6-7665-4cc1-b11f-7d9a7a1607bc)
+
+
+ 
+
+   
+
 
 
 
