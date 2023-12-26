@@ -35,9 +35,9 @@
 
 ### Work flow:
 1. Developer commits code to github
-2. Jenkins checks out code and runs script on Jenkinsfile.
-3. Jenkins builds docker image. 
-4. Jenkins pushes image to docker registry.
+1. Jenkins checks out code and runs script on Jenkinsfile.
+1. Jenkins builds docker image. 
+1. Jenkins pushes image to docker registry.
 
 ## Prerequisites:
 
