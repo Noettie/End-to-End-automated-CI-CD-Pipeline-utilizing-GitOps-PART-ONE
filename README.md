@@ -1,6 +1,7 @@
-## Containerization-and-deployment-of-nodejs-application
+## Containerization-and-Deployment-of-nodejs-Application
 
-## Goal
+### Goal
+
 ### To deploy an e-commerce application developed using React utilizing GitOps 
 
 ### The project workflow is shown below:
