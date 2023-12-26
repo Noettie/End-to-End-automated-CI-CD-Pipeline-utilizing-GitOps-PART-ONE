@@ -39,14 +39,14 @@
 * Jenkins builds docker image.
 * Jenkins pushes image to docker registry.
 
-## Prerequisites:
+### Prerequisites:
 
 1. _Spin up Jenkins server_.
 2. _Create Dockerhub Credentials_.
 3. _Create Github Credentials_.
 4. _Configure github and docker credentials in Jenkins Credentials store_.
 
-# Steps
+### CI Steps:
 
 1. Create first build pipeline Job
 2. Create the 2nd Pipeline Job that will contain the kubernetes manifest files argocd will be watching, set string parameters for this job
