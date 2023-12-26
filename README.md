@@ -64,10 +64,11 @@ _The name of the parameter is given on the  stage(Trigger manifest Update") of t
 10. Navigate to the Pipeline section and selection " Pipeline Script from SCM" and choose Git
 _Paste the second github repository url with the Jenkinsfile and manifest files. 
 _Save and Apply_
-
-  ### _Both CI and CD Jobs are configured on Jenkins and should appear on your workspace_
+_Both CI and CD Jobs are configured on Jenkins and should appear on your workspace_
 
 11. Click on build now of the CI Job.
+
+The CI Job should build successfully as below: 
 
   ![jenkins-CI-job](https://github.com/Noettie/End-to-End-automated-CI-CD-Pipeline-utilizing-GitOps-PART-ONE/assets/108426517/a97788b6-7665-4cc1-b11f-7d9a7a1607bc)
 
