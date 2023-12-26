@@ -41,10 +41,10 @@
 
 ## Prerequisites:
 
-1. Spin up Jenkins server.
-2. Create Dockerhub Credentials.
-3. Create Github Credentials.
-4. Configure github and docker credentials in Jenkins Credentials store.
+** Spin up Jenkins server.
+** Create Dockerhub Credentials.
+** Create Github Credentials.
+** Configure github and docker credentials in Jenkins Credentials store.
 
 # Steps
 
